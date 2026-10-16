@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outassic Run · Jurassic Park</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="--accent:#ff9d2b;">
+  <main class="arcade"><div class="screen"><video id="introVideo" class="intro-video" muted playsinline preload="auto"><source src="assets/intro-out-run.mp4" type="video/mp4"></video><audio id="introAudio" preload="auto"><source src="assets/intro-out-run.mp3" type="audio/mpeg"></audio><div id="introOverlay" class="intro-overlay hidden"><div id="introLabel"></div></div><video id="backgroundVideo" autoplay muted loop playsinline preload="auto" aria-hidden="true"><source src="assets/Background-fast.mp4" type="video/mp4"></video><audio id="gameMusic" loop preload="auto"><source src="assets/outassic-theme.mp3" type="audio/mpeg"></audio><canvas id="road" width="640" height="360"></canvas><div class="hud hidden" id="hud">JEEP WRANGLER · DISTANCIA <span id="distance">0</span></div><div class="over hidden" id="over"><h1>GAME OVER</h1><p id="result"></p><button id="retryBtn">VOLVER A JUGAR</button></div></div></main>
+  <script src="game.js"></script>
+</body>
+</html>
